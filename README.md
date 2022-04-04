@@ -17,6 +17,7 @@
 <br>
 
 ## 예시
+
 #### 프로세스와 스레드의 차이는?
 
 <details>
@@ -37,5 +38,16 @@
 
 <br>
 
+## 유용한 사이트 모음
+
+### gyoogle/tech-interview-for-developer
+
+https://github.com/gyoogle/tech-interview-for-developer
+<br>
+
+- 다양한 주제를 담고 있음.
+- 2019년부터 시작했고, 가장 인지도가 높은 repo가 아닌가 싶다.
+
 ## Reference
+
 https://github.com/gyoogle/tech-interview-for-developer
