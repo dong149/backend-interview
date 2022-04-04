@@ -1,25 +1,23 @@
-## Backend-Interview
+## 🧑‍💻 Backend-Interview
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/dong149/backend-interview?style=flat-square)
-
 <br>
-
 면접을 준비하면서, 질문과 답변을 정리해나갑니다.
 많은 분들께 도움이 되었으면 좋겠습니다 😀
-
 <br>
 
 ## 목차
 
-- [OS]()
-- [Network]()
-- [DB]()
-- [Java]()
-- [Spring]()
+- [OS](https://github.com/dong149/backend-interview/blob/master/os/README.md)
+- [Network](https://github.com/dong149/backend-interview/blob/master/network/README.md)
+- [DB](https://github.com/dong149/backend-interview/blob/master/db/README.md)
+- [Java](https://github.com/dong149/backend-interview/blob/master/java/README.md)
+- [Spring](https://github.com/dong149/backend-interview/blob/master/spring/README.md)
 
 <br>
 
-#### 예시) 프로세스와 스레드의 차이는?
+## 예시
+#### 프로세스와 스레드의 차이는?
 
 <details>
 <summary style="color:skyblue">정답보기</summary>
@@ -40,3 +38,4 @@
 <br>
 
 ## Reference
+https://github.com/gyoogle/tech-interview-for-developer
