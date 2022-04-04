@@ -147,3 +147,25 @@ https://mangkyu.tistory.com/75
 
 </Blockquote>
 </details>
+
+#### Spring MVC 요청 흐름
+
+<details>
+<summary style="color:skyblue">정답보기</summary>
+<Blockquote>
+<br>
+
+1. 클라이언트의 모든 요청을 Dispatcher Servlet이라는 Servlet Class 가 받는다.
+2. Dispatcher Servlet은 요청 URL을 Handler Mapping에게 전달하고, 현재 요청에 알맞는 Controller와 Method에 대한 정보를 얻는다.
+3. Dispatcher Servlet은 Handler Adapter에게 요청 처리를 위임한다.
+4. Handler Adapter는 Controller와 해당 메서드를 실행한다.
+5. Controller는 비즈니스 로직을 처리하고, 그 결과를 바탕으로 뷰에 전달할 객체를 Model객체에 저장한다.
+6. Dispatcher Servlet은 view name을 View Resolver에게 전달하여 View 객체를 얻는다.
+   View Resolver는 전달된 정보를 바탕으로 사용자에게 보여줄 View가 무엇인지 결정한다.
+7. Dispatcher Servlet은 View 객체에 화면 표시를 의뢰한다.
+8. View 객체는 해당하는 뷰(JSP 등)를 호출하며, 뷰는 Model 객체에서 화면 표시에 필요한 객체를 가져와 화면 표시를 처리한다.
+
+https://codingnotes.tistory.com/28
+
+</Blockquote>
+</details>
