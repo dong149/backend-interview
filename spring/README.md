@@ -7,6 +7,15 @@
 <Blockquote>
 <br>
 
+- Embed Tomcat 을 사용하기 때문에, 따로 Tomcat을 설치하거나, 매번 버전관리를 해줄 필요가 없다.
+- 기존에는 스프링을 사용할 때 버전까지 명시하고, 버전에 맞는 설정을 해주어야 했지만, 스프링 부트는 버전 관리를
+  스프링 부트에 의해 관리된다. 따라서, 예를들어 Spring-boot-starter-web을 사용하면 종속된 모든 라이브러리를 알맞게 찾아서
+  함께 가져오기 때문에 종속성이나 호환 버전에 대해 신경 쓸 필요가 없다.
+- Auto Configuration 지원
+- Actuator 기능 지원
+
+https://ssoco.tistory.com/66
+
 </Blockquote>
 </details>
 
@@ -86,6 +95,55 @@ public class MyBeanProxy extends MyBean {
 와 같은 식으로 프록시 패턴을 사용하여 해결한다. (예시일 뿐이다.)
 
 https://mangkyu.tistory.com/234
+
+</Blockquote>
+</details>
+
+#### @Bean, @Configuration vs @Component 차이?
+
+<details>
+<summary style="color:skyblue">정답보기</summary>
+<Blockquote>
+<br>
+
+### @Bean, @Configuration
+
+- 수동으로 스프링 컨테이너에 빈을 등록함.
+- 개발자가 직접 제어가 불가능한 외부 라이브러리 등을 Bean으로 만들려고 할 때, 사용한다.
+
+```java
+@Configuration
+public class RestTemplateConfig {
+  @Bean
+  public RestTemplate restTemplate(){
+    return new RestTemplate();
+  }
+}
+```
+
+- 유지보수성을 높이기 위해 애플리케이션 전범위적으로 사용되는 클래스나 다형성을 활용하여 여러 구현체를 빈으로 등록할 때 사용.
+
+```java
+@Configuration
+public class RestTemplateConfig {
+  @Bean
+  public RestTemplate testApiRestTemplate(){
+    return new RestTemplate();
+  }
+
+  @Bean
+  public RestTemplate testApi2RestTemplate(){
+    return new RestTemplate();
+  }
+}
+```
+
+### @Component
+
+- 자동으로 스프링 컨테이너에 빈을 등록하는 방법
+- 스프링의 @ComponentScan 기능이 @Component 어노테이션이 있는 클래스를 자동으로 찾아서 빈으로 등록한다.
+
+https://mangkyu.tistory.com/75
 
 </Blockquote>
 </details>
