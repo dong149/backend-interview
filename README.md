@@ -10,7 +10,7 @@
 ### 프로세스와 스레드의 차이는?
 
 <details><summary style="color:skyblue">정답보기</summary>
-<p style="padding-left:10%">
+<Blockquote>
 
 ### 프로세스
 
@@ -20,5 +20,5 @@
 
 프로세스가 할당받은 자원을 이용하는 실행 흐름의 단위.
 
-</p>
+</Blockquote>
 </details>
