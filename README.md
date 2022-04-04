@@ -1,12 +1,16 @@
 ## Backend-Interview
 
+![GitHub Repo stars](https://img.shields.io/github/stars/dong149/backend-interview?style=flat-square)
+
+<br>
+
 면접을 준비하면서, 질문과 답변을 정리해나갑니다.
 많은 분들께 도움이 되었으면 좋겠습니다 😀
 
-| 프로세스와 스레드의 차이는?
+### 프로세스와 스레드의 차이는?
 
 <details><summary style="color:skyblue">정답보기</summary>
-<p>
+<p style="padding-left:10%">
 
 ### 프로세스
 
